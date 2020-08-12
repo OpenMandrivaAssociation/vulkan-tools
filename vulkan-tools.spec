@@ -1,1 +1,44 @@
+%define uname   Vulkan-Tools
 
+Name:           vulkan-tools
+Version:        1.2.148.0
+Release:        1
+Summary:        Vulkan utilities and tools
+Group:          Development/Tools
+License:        ASL 2.0
+URL:            https://github.com/KhronosGroup/Vulkan-Tools
+Source0:        https://github.com/KhronosGroup/Vulkan-Tools/archive/sdk-%{version}/%{uname}-sdk-%{version}.tar.gz
+
+BuildRequires:  cmake
+BuildRequires:  glslang
+BuildRequires:  pkgconfig(vulkan)
+BuildRequires:  pkgconfig(wayland-client)
+BuildRequires:  pkgconfig(wayland-cursor)
+BuildRequires:  pkgconfig(wayland-server)
+BuildRequires:  pkgconfig(wayland-egl)
+BuildRequires:  pkgconfig(x11)
+BuildRequires:  pkgconfig(xcb)
+BuildRequires:  pkgconfig(xrandr)
+BuildRequires:  pkgconfig(python)
+
+%description
+This project provides Khronos official Vulkan Tools and Utilities for
+Windows, Linux, Android, and MacOS.
+
+%prep
+%autosetup -p1 -n %{uname}-sdk-%{version}
+
+%build
+%cmake \
+    -DGLSLANG_INSTALL_DIR=%{_bindir}
+%make_build
+
+%install
+%make_install
+
+%files
+%doc README.md CONTRIBUTING.md
+%license LICENSE.txt
+%{_bindir}/vkcube
+%{_bindir}/vkcubepp
+%{_bindir}/vulkaninfo
