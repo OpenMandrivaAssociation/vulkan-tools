@@ -34,7 +34,7 @@ Windows, Linux, Android, and MacOS.
 %make_build
 
 %install
-%make_install
+%make_install -C build
 
 %files
 %doc README.md CONTRIBUTING.md
