@@ -26,7 +26,7 @@ This project provides Khronos official Vulkan Tools and Utilities for
 Windows, Linux, Android, and MacOS.
 
 %prep
-%autosetup -p1 -n %{uname}-sdk-%{version}
+%autosetup -p1 -n %{uname}-%{version}
 
 %build
 %cmake \
