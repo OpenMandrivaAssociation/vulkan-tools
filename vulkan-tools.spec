@@ -7,7 +7,7 @@ Summary:        Vulkan utilities and tools
 Group:          Development/Tools
 License:        ASL 2.0
 URL:            https://github.com/KhronosGroup/Vulkan-Tools
-Source0:        https://github.com/KhronosGroup/Vulkan-Tools/archive/sdk-%{version}/%{uname}-sdk-%{version}.tar.gz
+Source0:        https://github.com/KhronosGroup/Vulkan-Tools/archive/%{version}/%{uname}-%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  glslang
