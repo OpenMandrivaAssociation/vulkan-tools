@@ -1,13 +1,13 @@
 %define uname   Vulkan-Tools
 
 Name:           vulkan-tools
-Version:        1.2.169
+Version:        1.2.174
 Release:        1
 Summary:        Vulkan utilities and tools
 Group:          Development/Tools
 License:        ASL 2.0
 URL:            https://github.com/KhronosGroup/Vulkan-Tools
-Source0:        https://github.com/KhronosGroup/Vulkan-Tools/archive/%{version}/%{uname}-%{version}.tar.gz
+Source0:        https://github.com/KhronosGroup/Vulkan-Tools/archive/v%{version}/%{uname}-%{version}.tar.gz
 
 BuildRequires:  cmake
 BuildRequires:  glslang
