@@ -2,7 +2,7 @@
 
 Name:           vulkan-tools
 Version:        1.2.179
-Release:        1
+Release:        2
 Summary:        Vulkan utilities and tools
 Group:          Development/Tools
 License:        ASL 2.0
@@ -16,6 +16,7 @@ BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-cursor)
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(wayland-egl)
+BuildRequires:  pkgconfig(wayland-eglstream)
 BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xcb)
 BuildRequires:  pkgconfig(xrandr)
