@@ -1,26 +1,26 @@
-%define uname   Vulkan-Tools
+%define uname Vulkan-Tools
 
-Name:           vulkan-tools
-Version:        1.2.180
-Release:        1
-Summary:        Vulkan utilities and tools
-Group:          Development/Tools
-License:        ASL 2.0
-URL:            https://github.com/KhronosGroup/Vulkan-Tools
-Source0:        https://github.com/KhronosGroup/Vulkan-Tools/archive/v%{version}/%{uname}-%{version}.tar.gz
+Name:		vulkan-tools
+Version:	1.2.184
+Release:	1
+Summary:	Vulkan utilities and tools
+Group:		Development/Tools
+License:	ASL 2.0
+URL:		https://github.com/KhronosGroup/Vulkan-Tools
+Source0:	https://github.com/KhronosGroup/Vulkan-Tools/archive/v%{version}/%{uname}-%{version}.tar.gz
 
-BuildRequires:  cmake
-BuildRequires:  glslang
-BuildRequires:  pkgconfig(vulkan)
-BuildRequires:  pkgconfig(wayland-client)
-BuildRequires:  pkgconfig(wayland-cursor)
-BuildRequires:  pkgconfig(wayland-server)
-BuildRequires:  pkgconfig(wayland-egl)
-BuildRequires:  pkgconfig(wayland-eglstream)
-BuildRequires:  pkgconfig(x11)
-BuildRequires:  pkgconfig(xcb)
-BuildRequires:  pkgconfig(xrandr)
-BuildRequires:  pkgconfig(python)
+BuildRequires:	cmake
+BuildRequires:	glslang
+BuildRequires:	pkgconfig(vulkan)
+BuildRequires:	pkgconfig(wayland-client)
+BuildRequires:	pkgconfig(wayland-cursor)
+BuildRequires:	pkgconfig(wayland-server)
+BuildRequires:	pkgconfig(wayland-egl)
+BuildRequires:	pkgconfig(wayland-eglstream)
+BuildRequires:	pkgconfig(x11)
+BuildRequires:	pkgconfig(xcb)
+BuildRequires:	pkgconfig(xrandr)
+BuildRequires:	pkgconfig(python)
 
 %description
 This project provides Khronos official Vulkan Tools and Utilities for
