@@ -1,7 +1,7 @@
 %define uname Vulkan-Tools
 
 Name:		vulkan-tools
-Version:	1.2.184
+Version:	1.2.194
 Release:	1
 Summary:	Vulkan utilities and tools
 Group:		Development/Tools
