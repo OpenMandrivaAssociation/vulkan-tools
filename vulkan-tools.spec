@@ -14,6 +14,7 @@ BuildRequires:	glslang
 BuildRequires:	pkgconfig(vulkan)
 BuildRequires:	pkgconfig(wayland-client)
 BuildRequires:	pkgconfig(wayland-cursor)
+BuildRequires:	pkgconfig(wayland-protocols)
 BuildRequires:	pkgconfig(wayland-server)
 BuildRequires:	pkgconfig(wayland-egl)
 BuildRequires:	pkgconfig(wayland-eglstream)
@@ -32,6 +33,7 @@ Windows, Linux, Android, and MacOS.
 %build
 %cmake \
     -DGLSLANG_INSTALL_DIR=%{_bindir}
+
 %make_build
 
 %install
