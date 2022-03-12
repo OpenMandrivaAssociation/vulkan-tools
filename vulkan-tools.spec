@@ -1,7 +1,7 @@
 %define uname Vulkan-Tools
 
 Name:		vulkan-tools
-Version:	1.3.205
+Version:	1.3.207
 Release:	1
 Summary:	Vulkan utilities and tools
 Group:		Development/Tools
@@ -42,6 +42,4 @@ Windows, Linux, Android, and MacOS.
 %files
 %doc README.md CONTRIBUTING.md
 %license LICENSE.txt
-%{_bindir}/vkcube
-%{_bindir}/vkcubepp
-%{_bindir}/vulkaninfo
+%{_bindir}/*
