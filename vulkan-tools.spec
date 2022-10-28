@@ -1,7 +1,7 @@
 %define uname Vulkan-Tools
 
 Name:		vulkan-tools
-Version:	1.3.227
+Version:	1.3.232
 Release:	1
 Summary:	Vulkan utilities and tools
 Group:		Development/Tools
@@ -32,6 +32,7 @@ Windows, Linux, Android, and MacOS.
 
 %build
 %cmake \
+    -DVULKAN_HEADERS_INSTALL_DIR=%{_prefix} \
     -DGLSLANG_INSTALL_DIR=%{_bindir}
 
 %make_build
