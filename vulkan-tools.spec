@@ -2,7 +2,7 @@
 
 Name:		vulkan-tools
 Version:	1.3.243
-Release:	1
+Release:	2
 Summary:	Vulkan utilities and tools
 Group:		Development/Tools
 License:	ASL 2.0
