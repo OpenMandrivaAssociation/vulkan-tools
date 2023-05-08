@@ -1,8 +1,8 @@
 %define uname Vulkan-Tools
 
 Name:		vulkan-tools
-Version:	1.3.243
-Release:	2
+Version:	1.3.250
+Release:	1
 Summary:	Vulkan utilities and tools
 Group:		Development/Tools
 License:	ASL 2.0
