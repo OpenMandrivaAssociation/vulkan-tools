@@ -1,7 +1,7 @@
 %define uname Vulkan-Tools
 
 Name:		vulkan-tools
-Version:	1.3.301
+Version:	1.3.303
 Release:	1
 Summary:	Vulkan utilities and tools
 Group:		Development/Tools
@@ -11,6 +11,7 @@ Source0:	https://github.com/KhronosGroup/Vulkan-Tools/archive/v%{version}/%{unam
 
 BuildRequires:	cmake
 BuildRequires:	glslang
+BuildRequires:  vulkan-volk
 BuildRequires:	pkgconfig(vulkan)
 BuildRequires:	pkgconfig(wayland-client)
 BuildRequires:	pkgconfig(wayland-cursor)
