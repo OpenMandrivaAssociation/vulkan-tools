@@ -10,6 +10,7 @@ URL:		https://github.com/KhronosGroup/Vulkan-Tools
 Source0:	https://github.com/KhronosGroup/Vulkan-Tools/archive/v%{version}/%{uname}-%{version}.tar.gz
 
 BuildRequires:	cmake
+BuildRequires:  make
 BuildRequires:	glslang
 BuildRequires:  vulkan-volk
 BuildRequires:	pkgconfig(vulkan)
