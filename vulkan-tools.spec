@@ -1,7 +1,7 @@
 %define uname Vulkan-Tools
 
 Name:		vulkan-tools
-Version:	1.4.350
+Version:	1.4.357
 Release:	1
 Summary:	Vulkan utilities and tools
 Group:		Development/Tools
@@ -30,7 +30,7 @@ This project provides Khronos official Vulkan Tools and Utilities for
 Windows, Linux, Android, and MacOS.
 
 %prep
-%autosetup -p1 -n %{uname}-%{version}
+%autosetup -p1 -n Vulkan-Tools-1.4.357
 
 %build
 %cmake \
