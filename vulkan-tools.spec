@@ -1,7 +1,7 @@
 %define uname Vulkan-Tools
 
 Name:		vulkan-tools
-Version:	1.4.357
+Version:	1.4.359
 Release:	1
 Summary:	Vulkan utilities and tools
 Group:		Development/Tools
@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(wayland-protocols)
 BuildRequires:	pkgconfig(wayland-server)
 BuildRequires:	pkgconfig(wayland-egl)
 BuildRequires:	pkgconfig(wayland-eglstream)
+BuildRequires:	cmake(VulkanHeaders)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xcb)
 BuildRequires:	pkgconfig(xrandr)
@@ -30,7 +31,7 @@ This project provides Khronos official Vulkan Tools and Utilities for
 Windows, Linux, Android, and MacOS.
 
 %prep
-%autosetup -p1 -n Vulkan-Tools-1.4.357
+%autosetup -p1 -n Vulkan-Tools-%{version}
 
 %build
 %cmake \
